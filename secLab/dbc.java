@@ -5,7 +5,7 @@ class dbc{
             Class.forName("com.mysql.jdbc.Driver");
             System.out.println("HHHH");
             Connection con=DriverManager.getConnection(  
-            "jdbc:mysql://localhost:3306/jdb","root","venkatrao_sp1");  
+            "jdbc:mysql://localhost:3306/jdb","root","yourPassword");  
             Statement stmt=con.createStatement();  
             ResultSet rs=stmt.executeQuery("select * from stud");  
             while(rs.next()){
